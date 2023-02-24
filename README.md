@@ -7,3 +7,4 @@
 4. module with ClassTest.pm
 5. terminal input/output and file control
 6. regex example
+7. OOP - inherit
