@@ -3,6 +3,7 @@ use strict;
 use Parameter;
 use EnterParameter;
 use FileOperation;
+use MyParameter;
   
 =x
 my $object1 = new Parameter({
@@ -35,3 +36,11 @@ while (my $read_in = <$fh3>) {
     print $read_in."\n";
 }
 $fh3->close;
+
+my $object2 = MyParameter->new ({
+    name => "Jason",
+    age => 33
+});
+ 
+$object2->set_gender("F")."\n";
+print $object2->get_name()."\n";
